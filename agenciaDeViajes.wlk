@@ -16,7 +16,7 @@ object coordinador {
     var rol =
 
     method esAltamenteCapacitado [
-        viajesRealizados (mayor) 20 and 
+        viajesRealizados (mayor) 20 and cumpleRol(rol)
     ]
 
     method reasignarRol(nuevoRol) {
