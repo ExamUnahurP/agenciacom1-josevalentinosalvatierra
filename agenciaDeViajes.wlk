@@ -1,4 +1,4 @@
-object coordinador {
+class coordinador {
     const viajesRealizados = 
     const estaMotivado = 
     const añosDeExperiencia =
@@ -13,7 +13,7 @@ object coordinador {
     }
 }
 
-class packNacional inherits packs {
+class packNacional{
     const property precioBase =
     const property cantidadDeDias =
     const property esPremium = esPremium()
@@ -27,14 +27,18 @@ class packNacional inherits packs {
         else
             return false
     }
+    method aplicarRecargo() {
 
+    }
 }
 
-class packInternacional inherits packs {
+class packInternacional{
     const property precioBase =
     const property cantidadDeDias =
     const property esPremium = esPremium()
     const property paisDestino =
+    const cantidadDeEscalas =
+    const esLugarDeInteres =
 
 
     method esPremium() {
@@ -43,6 +47,27 @@ class packInternacional inherits packs {
         else
             return false
     }
+
+    method aplicarRecargoInternacional() {
+        precioBase = precioBase + (precioBase * 0.2)
+    }
 }
 
+class beneficiosEspeciales {
+    const property tipo = ""
+    const property costo =
+    const property estaVigente =
+}
+
+object TransladosPrivados inherits beneficiosEspeciales {
+
+}
+
+object AccesoASalasVIP inherits beneficiosEspeciales {
+
+}
+
+object segurosAdicionales inherits beneficiosEspeciales {
+
+}
 me rindo
