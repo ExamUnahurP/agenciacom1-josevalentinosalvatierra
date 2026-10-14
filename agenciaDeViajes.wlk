@@ -1,16 +1,3 @@
-class packs {
-    const property precioBase =
-    const property cantidadDeDias =
-
-    method esPremium {
-        if (cantidadDeDias (mayor) 10 or coordinador.EsAltamenteCapacitado == true) {
-            return true
-        }
-        else
-            return false
-    }
-
-}
 
 object coordinador {
     const viajesRealizados = 
@@ -28,11 +15,24 @@ object coordinador {
 }
 
 class packNacional inherits packs {
+    const property precioBase =
+    const property cantidadDeDias =
+
+    method esPremium {
+        if (cantidadDeDias (mayor) 10 or coordinador.EsAltamenteCapacitado == true) {
+            return true
+        }
+        else
+            return false
+    }
 
 }
 
-object packInternacional inherits packs {
+class packInternacional inherits packs {
+    const property precioBase =
+    const property cantidadDeDias =
 
+    method esPremium 
 }
 
 me rindo
