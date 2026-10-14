@@ -1,11 +1,10 @@
-
 object coordinador {
     const viajesRealizados = 
     const estaMotivado = 
     const añosDeExperiencia =
     var rol =
 
-    method esAltamenteCapacitado [
+    method esAltamenteCapacitado() [
         viajesRealizados (mayor) 20 and cumpleRol(rol)
     ]
 
@@ -18,7 +17,7 @@ class packNacional inherits packs {
     const property precioBase =
     const property cantidadDeDias =
 
-    method esPremium {
+    method esPremium() {
         if (cantidadDeDias (mayor) 10 or coordinador.EsAltamenteCapacitado == true) {
             return true
         }
@@ -31,8 +30,14 @@ class packNacional inherits packs {
 class packInternacional inherits packs {
     const property precioBase =
     const property cantidadDeDias =
+    const property esPremium
 
-    method esPremium 
+    method esPremium() {
+        if (cantidadDeDias (mayor) 10 or coordinador.esAltamenteCapacitado == true)
+            return true
+        else
+            return false
+    }
 }
 
 me rindo
