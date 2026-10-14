@@ -7,7 +7,6 @@ class coordinador {
     method esAltamenteCapacitado() [
         viajesRealizados (mayor) 20 and cumpleRol(rol)
     ]
-
     method reasignarRol(nuevoRol) {
         rol = nuevoRol
     }
@@ -28,7 +27,7 @@ class packNacional{
         else
             return false
     }
-    method aplicarRecargo() {
+    method aplicarRecargo(){
 
     }
 }
@@ -41,7 +40,6 @@ class packInternacional{
     const cantidadDeEscalas
     const esLugarDeInteres
     var recargo
-
 
     method esPremiumInternacional() {
         if (esLugarDeInteres = true and cantidadDeDias (mayor) 20 and cantidadDeEscalas = 0)
