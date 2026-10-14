@@ -1,8 +1,8 @@
 class coordinador {
-    const viajesRealizados = 
-    const estaMotivado = 
-    const añosDeExperiencia =
-    var rol =
+    const viajesRealizados 
+    const estaMotivado 
+    const añosDeExperiencia 
+    var rol
 
     method esAltamenteCapacitado() [
         viajesRealizados (mayor) 20 and cumpleRol(rol)
@@ -14,14 +14,15 @@ class coordinador {
 }
 
 class packNacional{
-    const property precioBase =
-    const property cantidadDeDias =
+    const property precioBase 
+    const property cantidadDeDias 
     const property esPremium = esPremium()
-    const property provinciaDestino =
+    const property provinciaDestino 
     const Actividades = []
+    var recargo
 
-    method esPremium() {
-        if (cantidadDeDias (mayor) 10 or coordinador.EsAltamenteCapacitado == true) {
+    method esPremiumNacional() {
+        if (cantidadDeDias (mayor) 10 and coordinador.EsAltamenteCapacitado == true) {
             return true
         }
         else
@@ -33,23 +34,24 @@ class packNacional{
 }
 
 class packInternacional{
-    const property precioBase =
-    const property cantidadDeDias =
+    const property precioBase
+    const property cantidadDeDias
     const property esPremium = esPremium()
-    const property paisDestino =
-    const cantidadDeEscalas =
-    const esLugarDeInteres =
+    const property paisDestino
+    const cantidadDeEscalas
+    const esLugarDeInteres
+    var recargo
 
 
-    method esPremium() {
-        if (cantidadDeDias (mayor) 10 or coordinador.esAltamenteCapacitado == true)
+    method esPremiumInternacional() {
+        if (esLugarDeInteres = true and cantidadDeDias (mayor) 20 and cantidadDeEscalas = 0)
             return true
         else
             return false
     }
 
     method aplicarRecargoInternacional() {
-        precioBase = precioBase + (precioBase * 0.2)
+        recargo = precioBase + (precioBase * 0.2)
     }
 }
 
@@ -60,14 +62,11 @@ class beneficiosEspeciales {
 }
 
 object TransladosPrivados inherits beneficiosEspeciales {
-
 }
 
 object AccesoASalasVIP inherits beneficiosEspeciales {
-
 }
 
 object segurosAdicionales inherits beneficiosEspeciales {
-
 }
 me rindo
