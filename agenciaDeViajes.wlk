@@ -1,9 +1,12 @@
 class packs {
     const property precioBase =
     const property cantidadDeDias =
+
     method esPremium {
         if cantidadDeDias (mayor) 10 or coordinador.EsAltamenteCapacitado == true
     }
+
+
 }
 
 object coordinador {
@@ -13,20 +16,15 @@ object coordinador {
     var rol =
 
     method esAltamenteCapacitado [
-        if viajesRealizados (mayor) 20 and CumpleRol
+        if viajesRealizados (mayor) 20 and 
     ]
 
-    method CumpleRol {
-        if rol = Guia and estaMotivado = true {
-
-        }
-        if rol = Asistente and añosDeExperiencia (mayor) 3 [
-            
-        ]
+    method reasignarRol(nuevoRol) {
+        rol = rol
     }
 }
 
-object packNacional inherits packs {
+class packNacional inherits packs {
 
 }
 
