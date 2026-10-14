@@ -8,13 +8,22 @@ class packs {
 
 object coordinador {
     const viajesRealizados = 
-    const estaMotivado =
+    const estaMotivado = 
     const añosDeExperiencia =
     var rol =
 
     method esAltamenteCapacitado [
-        
+        if viajesRealizados (mayor) 20 and CumpleRol
     ]
+
+    method CumpleRol {
+        if rol = Guia and estaMotivado = true {
+
+        }
+        if rol = Asistente and añosDeExperiencia (mayor) 3 [
+            
+        ]
+    }
 }
 
 object packNacional inherits packs {
