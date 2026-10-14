@@ -16,11 +16,11 @@ object coordinador {
     var rol =
 
     method esAltamenteCapacitado [
-        if viajesRealizados (mayor) 20 and 
+        viajesRealizados (mayor) 20 and 
     ]
 
     method reasignarRol(nuevoRol) {
-        rol = rol
+        rol = nuevoRol
     }
 }
 
